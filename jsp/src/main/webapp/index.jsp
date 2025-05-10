@@ -10,9 +10,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Hellow</h1>
-	<%=num %>
-	<p>요청방식: <%= request.getMethod() %></p>
-	
+	<form action="./result/result.jsp" method="POST">
+		<p>이름 : </p> <input type="text" name="name" />
+		<input type="submit" value="전송" />
+	</form>
 </body>
 </html>
