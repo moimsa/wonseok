@@ -1,1 +1,68 @@
 @charset "UTF-8";
+body {
+  font-family: 'Segoe UI', '맑은 고딕', Arial, sans-serif;
+  background: #f5f7fa;
+  padding: 40px;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+  gap: 4px;
+}
+
+.tab {
+  padding: 12px 32px;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-bottom: none;
+  border-radius: 8px 8px 0 0;
+  color: #888;
+  font-size: 1.06rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  margin-bottom: -2px;
+  position: relative;
+  z-index: 1;
+}
+
+.tab.active {
+  background: #4d79ff;
+  color: #fff;
+  font-weight: bold;
+  border-color: #4d79ff #4d79ff #fff #4d79ff;
+  z-index: 2;
+}
+
+.tab:not(.active):hover {
+  background: #f0f6ff;
+  color: #4d79ff;
+}
+
+.content {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 2px 8px rgba(77,121,255,0.07);
+  padding: 32px 24px;
+  min-height: 120px;
+  width: 90%;
+  margin-top: -2px;
+}
+
+.content-item {
+  display: none;
+  font-size: 1.08rem;
+  color: #333;
+  animation: fadeIn 0.3s;
+}
+
+.content-item.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: none;}
+}
