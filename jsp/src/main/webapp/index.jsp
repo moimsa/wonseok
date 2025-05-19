@@ -33,5 +33,8 @@ header nav ul{display:flex; align-items:center;justify-content: center;gap: 10px
 		<input type="submit" value="전송" />
 	</form>
 </div>
+<script>
+	location.href = "login.jsp";
+</script>
 </body>
 </html>

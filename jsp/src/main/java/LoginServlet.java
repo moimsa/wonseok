@@ -5,24 +5,42 @@ import javax.servlet.http.*;
 
 @WebServlet("/login")
 public class LoginServlet extends HttpServlet {
-    // 임시로 하드코딩한 사용자 정보
-    private static final String USER_ID = "testuser";
-    private static final String USER_PW = "1234";
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
-        String userid = request.getParameter("userid");
-        String password = request.getParameter("password");
-
-        if (USER_ID.equals(userid) && USER_PW.equals(password)) {
-            // 로그인 성공
-            HttpSession session = request.getSession();
-            session.setAttribute("userid", userid);
-            response.sendRedirect("welcome.jsp");
-        } else {
-            // 로그인 실패
-            response.sendRedirect("login.jsp?error=1");
-        }
-    }
+	
+	private String id;
+    private String uid;
+    private String password;
+    private String gender;
+    private String email;
+    
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getUid() {
+		return uid;
+	}
+	public void setUid(String uid) {
+		this.uid = uid;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
 }
