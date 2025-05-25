@@ -28,6 +28,7 @@
 				<p><%=date %></p>
 				<p><%=(hour < 12)? "오전" : "오후" %></p>
 				<p><%=(hour < 12)? "오전 " + amHour : "오후 " + pmHour %></p>
+				<a href="ifres.jsp">IF문 시작</a>
 			</div>
 		</div>
 	</div>
