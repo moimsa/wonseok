@@ -8,6 +8,9 @@
 <link rel="stylesheet" href="./css/main.css">
 <title>if문 받기</title>
 </head>
+<%
+    request.setCharacterEncoding("UTF-8");
+%>
 <%!
 	String msg;
 %>
@@ -28,5 +31,6 @@
 %>
 <body bgcolor=<%=color %>>
 	<b><%=name %>님</b>이 좋아하는 색은 <b><%=msg %></b>입니다.
+	<a href="main.jsp">메인으로 가기</a>
 </body>
 </html>
