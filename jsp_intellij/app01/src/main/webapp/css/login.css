@@ -102,6 +102,15 @@ button[type="submit"]:hover {
 .signup__btn{
     width: 100%;
     background: #00a383;
+    border-radius: 5px;
+}
+.signup__btn > a{
+    display:  block;
+    margin-top: 10px;
+    padding:  14px;
+    border-radius: 5px;
+    text-align: center;
+    background: #00a383;
     color: #fff;
 }
 

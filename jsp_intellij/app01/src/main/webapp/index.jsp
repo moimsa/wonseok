@@ -27,7 +27,7 @@
     // 로그인한 경우: 환영 메시지와 로그아웃 링크
 %>
 <h1><a href="index.jsp"><%= username %>님, 환영합니다!</a></h1>
-<p><a href="./login/login.jsp?action=logout">로그아웃</a></p>
+<p class="logout__btn"><a href="./login/login.jsp?action=logout">로그아웃</a></p>
 <%
     }
 %>
